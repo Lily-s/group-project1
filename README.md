@@ -2,8 +2,6 @@
 
 First group project on HTML and CSS
 
-group3-exercise Repository for group three
-
 Create website using the following design:
 
 https://www.figma.com/file/Nu5mQ3FAQ8woaQdtPlX25F/Groups?node-id=0%3A1&mode=dev
