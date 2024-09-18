@@ -1,0 +1,115 @@
+@mixin sairaFont($size) {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: $size;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+@mixin topLink {
+  text-decoration: none;
+}
+
+.calibriFont {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  height: 112px;
+  left: 0px;
+  top: 0px;
+  background: #000000;
+  color: white;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 94px;
+  left: 0px;
+  bottom: 94px;
+  background: #000000;
+  color: white;
+}
+
+#paw {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 64px;
+  top: 28px;
+  color: #ffc0cb;
+  background-image: url("../assets/svg/paw-solid.svg");
+}
+
+#aboutUs {
+  position: absolute;
+  width: 154px;
+  height: 46px;
+  right: 917px;
+  top: 20px;
+  @include sairaFont(36px);
+  @include topLink();
+}
+
+#menu {
+  position: absolute;
+  width: 104px;
+  height: 41px;
+  left: 1029px;
+  top: 20px;
+
+  @include sairaFont(36px);
+  @include topLink();
+}
+
+#careers {
+  position: absolute;
+  width: 139px;
+  height: 46px;
+  left: 1197px;
+  top: 20px;
+
+  @include sairaFont(36px);
+  @include topLink();
+}
+
+#buttonOrder {
+  position: absolute;
+  width: 235px;
+  height: 36px;
+  left: 1433px;
+  top: 25px;
+
+  @include sairaFont(32px);
+  @include topLink();
+}
+
+@mixin socialButton($url, $width) {
+  background-image: url($url);
+  position: absolute;
+  height: 48px;
+  width: $width;
+  background: #ffffff;
+}
+
+#buttonFB {
+  @include socialButton("../assets/svg/facebook.svg", 48px);
+  right: 228px;
+}
+
+#buttonInsta {
+  @include socialButton("../assets/svg/instagram.svg", 42px);
+  right: 86px;
+}
+
+#buttonLinked {
+  @include socialButton("../assets/svg/linkedin.svg", 42px);
+  right: 154px;
+}
