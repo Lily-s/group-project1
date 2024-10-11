@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link href="css/headerFooter.css" rel="stylesheet" />
+    <link href="css/bookTablePage.css" rel="stylesheet" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +22,54 @@
       <a href="#" id="careers">Careers</a>
       <a href="#" id="buttonOrder">ORDER NOW</a>
     </header>
-    <main></main>
+    <main>
+      <div class="form-container">
+        <h2>Book Table</h2>
+        <form action="#">
+          <div class="input-group">
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone"
+              required
+            />
+          </div>
+          <div class="input-group full-width">
+            <textarea
+              id="notes"
+              name="notes"
+              rows="5"
+              placeholder="Additional notes"
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-button">Book Table</button>
+        </form>
+      </div>
+    </main>
     <footer class="footer">
       <div id="allRights">© All Rights Reserved 2023</div>
       <div id="socialButtonsContainer">
